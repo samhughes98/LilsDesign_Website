@@ -1,0 +1,202 @@
+@font-face {
+  font-family: "columbo";
+  src: url("../fonts/Colombo\ Sans\ Font.ttf");
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+  background-color: #d5adc8 !important;
+  background-image: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%) !important;
+  background-attachment:fixed;
+}
+
+* {
+  font-family: "columbo";
+  text-decoration: none;
+  list-style: none;
+}
+
+#navBar {
+  width: 100%;
+  height: 6vh;
+  text-align: center;
+  p {
+    text-shadow: 0 1px #ff0000;
+    letter-spacing: 2px;
+    color: #FFF9AA;
+    font-size: 1.9em;
+    text-decoration: underline !important;
+    text-underline-offset: 8px;
+  }
+}
+
+#menu {
+  z-index: 2;
+}
+
+#menu-bar {
+  float: right;
+  margin-top: -8vh;
+  margin-right: 1.8vw;
+  width: 1.8vw;
+  height: 40px;
+  cursor: pointer;
+}
+
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: #ffdfd3;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+#bar1 {
+  transform: translateY(-4px);
+}
+
+#bar3 {
+  transform: translateY(4px);
+}
+
+.nav {
+  transition: 0.3s ease;
+  display: none;
+  float: right;
+}
+
+.nav ul {
+  padding-right: 2vw;
+  margin-top: -1vh;
+  z-index: 999;
+}
+
+.nav li {
+  list-style: none;
+  padding: 4px 0;
+  z-index: 999;
+}
+
+.nav li a {
+    z-index: 999;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  z-index: 999;
+}
+
+.nav li a:hover {
+  font-weight: bold;
+  z-index: 999;
+}
+
+.menu-bg,
+#menu {
+  top: 10vh;
+  right: 0;
+  position: absolute;
+}
+
+.menu-bg {
+  z-index: 999;
+  width: 0;
+  height: 0;
+  margin-left: 100vw !important;
+  background: radial-gradient(circle, #fec8d8, #fec8d8);
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.change {
+  display: block;
+}
+
+.change .bar {
+  z-index: 999;
+  background-color: white;
+}
+
+.change #bar1 {
+  z-index: 9999;
+  transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change #bar3 {
+  z-index: 9999;
+  transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change-bg {
+  z-index: -1;
+  width: 520px;
+  height: 460px;
+  transform: translate(60%, -45%);
+}
+
+#bodyText {
+    text-shadow: 2px 2px #ff0000;
+  color:#FFF9AA;
+  width: 12vw;
+  font-size: 3em;
+  letter-spacing: 2px;
+  margin-left: 2vw;
+  margin-top: 12vh;
+}
+
+#bodyContent {
+    text-shadow: 1px 1px #ff0000;
+  color:#FFF9AA;
+  letter-spacing: 2px;
+  position: absolute;
+  margin-top: -40vh;
+  margin-left: 22vw;
+  width: 20vw;
+}
+
+#img-1-div {
+    z-index: -1;
+    float:right;
+    margin-right: 10vw;
+    margin-top: -50vh; 
+    #img-1{
+        z-index: -9999;
+        height:auto; 
+        width: 30vw;
+        margin-right:-2vw;
+    }
+    #img-2 {
+        position: absolute;
+        height:auto; 
+        width: 25vw;
+        margin-left:-40vw;
+        margin-top:5vh;
+        border-radius: 10px;
+    }
+    #img-3{
+        position: absolute;
+        height:auto; 
+        width: 25vw;
+        margin-left:-20vw;
+        margin-top:80vh;
+        border-radius: 10px;
+    }
+
+    #img-4 {
+        height:auto; 
+        z-index: -1;
+        position: absolute;
+        width: 30vw;
+        margin-left:-30vw;
+        margin-top: 90vh;
+        transform: rotate(180deg);
+    }
+}
